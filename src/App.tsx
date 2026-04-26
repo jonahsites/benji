@@ -20,12 +20,12 @@ const faqItems = [
   { q: "What if my insurance deductible is over $2,500?", a: "We may require an additional security deposit or supplemental coverage in certain high-deductible cases." },
   { q: "Do you have any extra hidden fees?", a: "Transparency is key. We detail all costs upfront, including delivery, fuel, and security deposits." },
   { q: "Insurance requirements for business rentals?", a: "Business rentals require commercial insurance coverage or a verified corporate policy. Contact us for specifics." },
-  { q: "Do you offer delivery service?", a: "Yes! We offer delivery to Miami International Airport (MIA), Fort Lauderdale (FLL), and custom locations across the Miami area." },
+  { q: "Do you offer delivery service?", a: "Yes! We offer delivery to Orlando, Miami, Broward, and Tampa area airports and custom locations across Florida." },
   { q: "How many miles are included with my rental?", a: "Standard rentals typically include 100-150 miles per day. Excess mileage fees apply thereafter." },
   { q: "What is your security deposit policy?", a: "A refundable security deposit is required for all rentals. The amount varies based on the vehicle selected." },
   { q: "What is your cancellation policy?", a: "Cancellations made 72+ hours in advance are eligible for a credit. Late cancellations may incur fees." },
   { q: "Do you offer pick-up or drop-off outside of business hours?", a: "Yes, we offer flexible pick-up and drop-off options. Please coordinate with our team in advance for after-hours service." },
-  { q: "Do you offer roadside assistance?", a: "Every rental includes 24/7 roadside assistance for your peace of mind while exploring the Miami area." },
+  { q: "Do you offer roadside assistance?", a: "Every rental includes 24/7 roadside assistance for your peace of mind while exploring Florida." },
   { q: "Less than 72 hour reservation?", a: "While we prefer advance booking, we can often accommodate last-minute requests. Check availability directly for same-day requests." },
   { q: "Do you offer military discount?", a: "We are proud to support our service members. Please inquire about our military discount program when booking." },
 ];
@@ -33,7 +33,7 @@ const faqItems = [
 const specs = [
   { val: "$715", label: "Starting / Day" },
   { val: "Elite", label: "Collection" },
-  { val: "MIAMI", label: "Coverage" },
+  { val: "FLORIDA", label: "Coverage" },
   { val: "24/7", label: "Support" },
 ];
 
@@ -57,12 +57,10 @@ export default function App() {
       {/* Floating HUD Navigation */}
       <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-100 flex items-center gap-2 px-2 py-2 bg-black/40 backdrop-blur-xl border border-white/10 rounded-full pointer-events-auto">
         <div className="flex items-center gap-3 px-6 py-2 border-r border-white/10">
-          <img 
-            src="/Screenshot 2026-04-23 at 12.45.14 PM.png" 
-            alt="Turismo" 
-            className="h-6 w-auto invert brightness-0"
-          />
-          <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hidden md:block">Turismo Exotics</span>
+          <div className="h-6 w-10 bg-red-600 flex items-center justify-center rounded-sm">
+            <span className="text-[10px] font-black text-black">B</span>
+          </div>
+          <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hidden md:block">Benji Rental</span>
         </div>
         <div className="flex items-center gap-1 md:gap-4 px-2">
           {navLinks.map((link, i) => (
@@ -117,7 +115,7 @@ export default function App() {
                 </div>
                 <div>
                   <p className="text-[9px] uppercase tracking-widest text-white/30 mb-2">Location Hubs</p>
-                  <p className="text-sm font-medium leading-relaxed">Miami / Tampa / Orlando / NY.</p>
+                  <p className="text-sm font-medium leading-relaxed">Orlando / Tampa / Miami / Broward.</p>
                 </div>
               </div>
             </motion.div>
@@ -147,7 +145,7 @@ export default function App() {
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="flex justify-between items-end">
                   <div>
-                    <p className="text-4xl font-bold mb-1 tracking-tighter">TURISMO</p>
+                    <p className="text-4xl font-bold mb-1 tracking-tighter">BENJI</p>
                     <p className="text-[10px] uppercase tracking-[0.4em] text-red-500 font-bold">Elite Performance</p>
                   </div>
                   <MousePointer2 className="text-white/20 -rotate-12" size={32} />
@@ -274,11 +272,11 @@ export default function App() {
               <h2 className="text-7xl md:text-9xl font-bold tracking-tighter uppercase leading-[0.85] mb-12">Total <br/> <span className="text-outline">Command.</span></h2>
               <div className="space-y-8 text-white/50 text-xl leading-relaxed font-light font-mono">
                 <p>
-                  &gt; TURISMO EXOTICS IS MORE THAN RENTALS.<br/>
-                  &gt; WE ARE THE PERFORMANCE OPERATORS OF MIAMI, TAMPA, ORLANDO & NY.
+                  &gt; BENJI RENTAL IS MORE THAN RENTALS.<br/>
+                  &gt; WE ARE THE PERFORMANCE OPERATORS OF ORLANDO, TAMPA, MIAMI & BROWARD.
                 </p>
                 <p className="text-base text-white/30 uppercase tracking-widest leading-loose">
-                  Our fleet is a curated selection of automotive precision. We provide the weaponry for the streets across our major hubs, maintained to surgical standards and delivered with absolute efficiency.
+                  Our fleet is a curated selection of automotive precision based in Central Florida. We provide the weaponry for the streets across our major hubs, maintained to surgical standards and delivered with absolute efficiency.
                 </p>
               </div>
               <div className="mt-16 grid grid-cols-2 gap-12 border-t border-white/5 pt-16">
@@ -313,18 +311,16 @@ export default function App() {
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-4 mb-12">
-              <img 
-                src="/Screenshot 2026-04-23 at 12.45.14 PM.png" 
-                alt="Turismo" 
-                className="h-10 w-auto invert brightness-0"
-              />
+              <div className="h-10 w-16 bg-red-600 flex items-center justify-center rounded-sm">
+                <span className="text-xl font-black text-black">B</span>
+              </div>
               <div>
-                <span className="text-xl font-bold tracking-tighter text-white uppercase leading-none block">Turismo</span>
-                <span className="text-[10px] tracking-[0.4em] text-red-500 font-bold uppercase mt-1">Exotics HQ</span>
+                <span className="text-xl font-bold tracking-tighter text-white uppercase leading-none block">Benji</span>
+                <span className="text-[10px] tracking-[0.4em] text-red-500 font-bold uppercase mt-1">Rental HQ</span>
               </div>
             </div>
             <div className="flex flex-col gap-4 text-[9px] font-mono uppercase tracking-[0.2em] text-white/30">
-              <p>COORD: 25.7617° N, 80.1918° W</p>
+              <p>COORD: 28.5383° N, 81.3792° W</p>
               <p>STATUS: OPERATIONAL_24/7</p>
               <p>VERSION: 2.1.0_LATEST</p>
             </div>
@@ -342,7 +338,7 @@ export default function App() {
           <div>
             <h4 className="text-[10px] font-bold uppercase tracking-[0.6em] mb-12 text-red-500">Contact Protocol</h4>
             <div className="flex flex-col gap-8 text-[11px] font-bold uppercase tracking-[0.3em] text-white/30">
-              <p>Direct: FL_NY_TERRITORIES</p>
+              <p>Direct: CENTRAL_FL_TERRITORIES</p>
               <p>Secure: ENCRYPTED_INBOX</p>
               <p>Global: HUB_LOGISTICS</p>
             </div>
@@ -358,7 +354,7 @@ export default function App() {
         </div>
 
         <div className="max-w-[1400px] mx-auto border-t border-white/5 pt-10 flex justify-between items-center">
-          <p className="text-[9px] font-mono tracking-[0.4em] text-white/10 uppercase">© 2025 TURISMO_OPERATIONS // ALL_RIGHTS_RESERVED.</p>
+          <p className="text-[9px] font-mono tracking-[0.4em] text-white/10 uppercase">© 2025 BENJI_RENTAL_OPERATIONS // ALL_RIGHTS_RESERVED.</p>
           <div className="hidden md:flex gap-10">
             {["Terms", "Privacy", "System"].map(link => (
               <a key={link} href="#" className="text-[9px] font-mono tracking-[0.4em] text-white/10 hover:text-red-500 transition-colors uppercase">{link}</a>

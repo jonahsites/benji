@@ -1,4 +1,4 @@
-# 🚀 TopCar Miami Rental - Easy Integration Guide
+# 🚀 Benji Rental - Easy Integration Guide
 
 ## 🎯 Quick Copy-Paste (Single HTML File)
 1. Copy `dist/index.html` (run `npm run build` first)

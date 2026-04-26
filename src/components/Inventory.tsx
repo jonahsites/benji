@@ -55,7 +55,7 @@ const Inventory: React.FC<InventoryProps> = ({ onClose }) => {
         {/* Header */}
         <div className="flex justify-between items-start mb-20">
           <div>
-            <div className="text-accent text-[10px] uppercase tracking-[0.5em] font-bold mb-4">Turismo Exotics High Performance Fleet</div>
+            <div className="text-accent text-[10px] uppercase tracking-[0.5em] font-bold mb-4">Benji Rental High Performance Fleet</div>
             <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none">
               The <span className="text-white/20 text-outline">Power</span> <br/> On Demand.
             </h2>
@@ -151,7 +151,7 @@ const Inventory: React.FC<InventoryProps> = ({ onClose }) => {
 
         {filteredCars.length === 0 && (
           <div className="py-40 text-center">
-            <p className="text-white/20 uppercase tracking-[0.5em] text-xs">No matching vehicles found in our Miami collection.</p>
+            <p className="text-white/20 uppercase tracking-[0.5em] text-xs">No matching vehicles found in our Florida collection.</p>
           </div>
         )}
       </div>
